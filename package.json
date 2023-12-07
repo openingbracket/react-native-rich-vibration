@@ -21,13 +21,13 @@
     "react-native-rich-vibration",
     "ReactNativeRichVibration"
   ],
-  "repository": "https://github.com/shafayeatsumit/react-native-rich-vibration",
+  "repository": "https://github.com/opening-bracket/react-native-rich-vibration",
   "bugs": {
-    "url": "https://github.com/shafayeatsumit/react-native-rich-vibration/issues"
+    "url": "https://github.com/opening-bracket/react-native-rich-vibration/issues"
   },
   "author": "shafayeatsumit <shafayeatkabir@gmail.com> (https://github.com/shafayeatsumit)",
   "license": "MIT",
-  "homepage": "https://github.com/shafayeatsumit/react-native-rich-vibration#readme",
+  "homepage": "https://github.com/opening-bracket/react-native-rich-vibration#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
