@@ -25,6 +25,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+example/ios/reactnativerichvibrationexample.xcodeproj/project.pbxproj
 
 # Android/IJ
 #
