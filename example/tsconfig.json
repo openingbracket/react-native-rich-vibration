@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "react-native-rich-vibration": ["../src/index"],
+      "react-native-rich-vibration/*": ["../src/*"]
+    }
+  }
+}
