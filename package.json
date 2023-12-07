@@ -1,7 +1,7 @@
 {
   "name": "react-native-rich-vibration",
   "version": "0.1.0",
-  "description": "A React Native library that makes regular vibrations more interesting by adding haptic feedback.",
+  "description": "React Native Vibration Library with Rich Features",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
