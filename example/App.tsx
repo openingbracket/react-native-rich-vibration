@@ -11,7 +11,12 @@ export default function App() {
       </Text>
       <Button
         title="Press"
-        onPress={() => ReactNativeRichVibration.vibrate(4000, 0.8)}
+        onPress={() => ReactNativeRichVibration.vibrate(4000, 0.4)}
+      />
+      <View />
+      <Button
+        title="Cancel"
+        onPress={() => ReactNativeRichVibration.cancelVibration()}
       />
     </View>
   );

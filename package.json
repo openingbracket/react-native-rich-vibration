@@ -1,6 +1,6 @@
 {
   "name": "react-native-rich-vibration",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Native Vibration Library with Rich Features",
   "main": "build/index.js",
   "types": "build/index.d.ts",
