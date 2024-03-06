@@ -9,10 +9,6 @@ public class ReactNativeRichVibrationModule: Module {
   public func definition() -> ModuleDefinition {
     Name("ReactNativeRichVibration")
 
-    Function("hello") {
-      return "Hello world! 👋"
-    }
-
     Function("hasHaptics") { [weak self] in
         return self?.hasHaptics() ?? false
     }    

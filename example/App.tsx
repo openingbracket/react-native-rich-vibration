@@ -1,19 +1,18 @@
 import { StyleSheet, Text, View, Button } from "react-native";
-
 import * as ReactNativeRichVibration from "react-native-rich-vibration";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{ReactNativeRichVibration.hello()}</Text>
+      <View style={{ height: 50 }} />
       <Text>
-        {ReactNativeRichVibration.hasHaptics() ? "has haptics" : "No haptics"}
+        {ReactNativeRichVibration?.hasHaptics() ? "has haptics" : "No haptics"}
       </Text>
       <Button
         title="Press"
-        onPress={() => ReactNativeRichVibration.vibrate(4000, 0.4)}
+        onPress={() => ReactNativeRichVibration.vibrate(2000, 80)}
       />
-      <View />
+      <View style={{ height: 50 }} />
       <Button
         title="Cancel"
         onPress={() => ReactNativeRichVibration.cancelVibration()}
