@@ -443,7 +443,7 @@ PODS:
     - React-jsi (= 0.72.6)
     - React-logger (= 0.72.6)
     - React-perflogger (= 0.72.6)
-  - ReactNativeRichVibration (0.1.2):
+  - ReactNativeRichVibration (0.2.1):
     - ExpoModulesCore
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
@@ -650,7 +650,7 @@ SPEC CHECKSUMS:
   React-runtimescheduler: f23e337008403341177fc52ee4ca94e442c17ede
   React-utils: fa59c9a3375fb6f4aeb66714fd3f7f76b43a9f16
   ReactCommon: dd03c17275c200496f346af93a7b94c53f3093a4
-  ReactNativeRichVibration: 7644c607a197be5ff59752ea88ce42b56cb1b626
+  ReactNativeRichVibration: ff8ec4dd2b490989faf14d6fc38a89364c821794
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: b76f1acfda8212aa16b7e26bcce3983230c82603
 
