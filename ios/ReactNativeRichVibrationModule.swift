@@ -17,8 +17,8 @@ public class ReactNativeRichVibrationModule: Module {
       return self?.cancelVibration()
     }      
 
-    Function("vibrate") { [weak self] (duration: Double, intensity: Double) in
-        self?.vibrate(duration: duration, intensity: intensity)
+    Function("vibrate") { [weak self] (duration: Double, intensity: Double, sharpness:Double) in
+        self?.vibrate(duration: duration, intensity: intensity, sharpness:sharpness)
     }   
   }
 
@@ -39,8 +39,9 @@ public class ReactNativeRichVibrationModule: Module {
     }
   }
 
-  private func vibrate(duration: Double, intensity: Double) {    
+  private func vibrate(duration: Double, intensity: Double, sharpness:Double) {    
     let intensityAsFloat: Float = Float(intensity)
+    let sharpnessAsFloat: Float = Float(sharpness)
 
     // Ensure haptic engine is initialized
     if hapticEngine == nil {
@@ -59,7 +60,7 @@ public class ReactNativeRichVibrationModule: Module {
         eventType: .hapticContinuous,
         parameters: [
             CHHapticEventParameter(parameterID: .hapticIntensity, value: intensityAsFloat),
-            CHHapticEventParameter(parameterID: .hapticSharpness, value: 1) // You can adjust sharpness as needed
+            CHHapticEventParameter(parameterID: .hapticSharpness, value: sharpnessAsFloat) // You can adjust sharpness as needed
         ],
         relativeTime: 0,
         duration: durationInSeconds

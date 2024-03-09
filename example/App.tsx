@@ -10,7 +10,7 @@ export default function App() {
       </Text>
       <Button
         title="Press"
-        onPress={() => ReactNativeRichVibration.vibrate(2000, 80)}
+        onPress={() => ReactNativeRichVibration.vibrate(2000, 100, 100)}
       />
       <View style={{ height: 50 }} />
       <Button
