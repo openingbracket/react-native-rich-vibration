@@ -14,10 +14,7 @@ React Native Rich Vibration is a simple module that allows you to incorporate ha
 
 Watch the demo video below to see the React Native Rich Vibration module in action:
 
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/openingbracket/react-native-rich-vibration/main/example/assets/demo-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/openingbracket/react-native-rich-vibration/assets/9054649/35f55ed6-f3b0-4d23-9d4d-74ae94693d42
 
 ## Usage
 
