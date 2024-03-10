@@ -1,6 +1,8 @@
 # React Native Rich Vibration
 
-React Native Rich Vibration is a simple module that allows you to incorporate haptic feedback into your React Native applications. Supports both Android and IOS.
+This React Native library provides an alternative to the standard vibrations API, integrating haptic feedback for a more immersive user experience. With customizable options for intensity, duration, and sharpness, you have greater control over how vibrations feel in your application.
+
+⚠️ This library requires your mobile device to have a haptic engine.
 
 ## Installation
 
