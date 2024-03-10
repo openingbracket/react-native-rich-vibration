@@ -16,7 +16,7 @@ const windowHeight = Dimensions.get("window").height;
 export default function App() {
   const [intensity, setIntensity] = useState(40);
   const [sharpness, setSharpness] = useState(80);
-  const [duration, setDuration] = useState(1000);
+  const [duration, setDuration] = useState(3000);
 
   function calculateWidth(minValue = 1000, maxValue = 5000) {
     // Normalize the slider value between 0 and 1
@@ -37,10 +37,14 @@ export default function App() {
   }
 
   const durationWidth = calculateWidth();
+  const isHapticAvailable = ReactNativeRichVibration.hasHaptics();
 
   return (
     <View style={styles.container}>
       <View style={styles.barContainer}>
+        <Text style={styles.hasHaptics}>
+          Haptic feedback available: {isHapticAvailable.toString()}
+        </Text>
         <View style={[styles.barBackground, { width: `${durationWidth}%` }]}>
           <View style={[styles.barForeground, { height: `${intensity}%` }]} />
         </View>
@@ -118,6 +122,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: windowWidth * 0.01,
     paddingVertical: windowHeight * 0.04,
+  },
+  hasHaptics: {
+    paddingVertical: 20,
+    fontSize: 14,
+    color: "#c5c5c5",
   },
   barBackground: {
     height: "80%",
